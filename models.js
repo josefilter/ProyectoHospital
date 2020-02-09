@@ -1,16 +1,16 @@
 const mongoose = require ('mongoose');
 
-const doctores = mongoose.model('doctores', 
-  { nombre: String, apellidos: String, direccion: String, especializacion: String }
+const Doctores = mongoose.model('Doctores', 
+new mongoose.Schema({ nombre: String, apellidos: String, direccion: String, especializacion: String })
 );
 
-const pacientes = mongoose.model('pacientes',
+const Pacientes = mongoose.model('Pacientes',
     new mongoose.Schema({ nombre: String, apellidos: String, telefono: String, enfermedad: String })
 );
 
 module.exports = {
-    doctores: doctores,
-    pacientes: pacientes
+    Doctores: Doctores,
+    Pacientes: Pacientes
 }
 
 // module.exports = {
