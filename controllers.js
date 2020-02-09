@@ -47,21 +47,21 @@ exports.createDoctor = (req, res) => {
 // ------ PACIENTES
 
 exports.readPacientes = (req, res) => {
-    Paciente.find({}, (err, data) => {
+    Pacientes.find({}, (err, data) => {
         if (err) res.json({ error: err });
         else res.json(data);
     });
 }
 
 exports.readPaciente = (req, res) => {
-    Paciente.findOne({ _id: req.params.id }, (err, data) => {
+    Pacientes.findOne({ _id: req.params.id }, (err, data) => {
         if (err) res.json({ error: err });
         else res.json(data);
     });
 }
 
 exports.deletePaciente = (req, res) => {
-    Paciente.findOneAndRemove({ _id: req.params.id }, (err, data) => {
+    Pacientes.findOneAndRemove({ _id: req.params.id }, (err, data) => {
         if (err) res.json({ error: err });
         else res.json(data);
     });
@@ -79,7 +79,7 @@ exports.updatePaciente = (req, res) => {
 }
 
 exports.createPaciente = (req, res) => {
-    const paciente = new Paciente({ nombre: req.body.nombre, apellidos: req.body.apellidos, telefono: req.body.telefono, enfermedad: req.body.enfermedad });
+    const paciente = new Pacientes({ nombre: req.body.nombre, apellidos: req.body.apellidos, telefono: req.body.telefono, enfermedad: req.body.enfermedad });
     paciente.save((err, data) => {
         if (err) res.json({ error: err });
         else res.json(data);
