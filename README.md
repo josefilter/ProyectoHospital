@@ -190,7 +190,7 @@ Deberemos sustituir `usuario`, `contraseña`, `servidor` y `basedatos` por los n
 
 `**controller.js**`
 
-[controller.js](https://github.com/josefilter/ProyectoHospital/blob/master/controller.js)
+[controller.js](https://github.com/josefilter/ProyectoHospital/blob/master/controllers.js)
 
 `**models.js**`
 
@@ -198,15 +198,11 @@ Deberemos sustituir `usuario`, `contraseña`, `servidor` y `basedatos` por los n
 
 `**.gitignore**`
 
-[.ignore](https://github.com/josefilter/ProyectoHospital/blob/master/.ignore)
+[.gitignore](https://github.com/josefilter/ProyectoHospital/blob/master/.gitignore)
 
 `**package-lock.json**`
 
 [package-lock.json](https://github.com/josefilter/ProyectoHospital/blob/master/package-lock.json)
-
-`**package.json**`
-
-[package.json](https://github.com/josefilter/ProyectoHospital/blob/master/package.json)
 
 `**routes.js**`
 
