@@ -28,7 +28,7 @@ npm  init  -y
 La última sentencia nos crea un archivo **`package.json`** con la metainformación del proyecto. La opción `y` o `--yes` es para que no nos pregunte y escriba una configuración por defecto en dicho archivo. Siempre podemos editarlo más adelante y modificar la version, añadir el autor entre otras cosas
 
 > Nota: Es muy aconsejable crear un archivo `.gitignore` con el siguiente contenido:
-
+> 
 > ```
 > node_modules/
 > .env
