@@ -25,7 +25,7 @@ cd  proyectohospital
 npm  init  -y
 ```
 
-La última sentencia nos crea un archivo **`package.json`** con la metainformación del proyecto. La opción `y` o `--yes` es para que no nos pregunte y escriba una configuración por defecto en dicho archivo. Siempre podemos editarlo más adelante y modificar la version, añadir el autor entre otras cosas
+La última sentencia nos crea un archivo **`package.json`** con la metainformación del proyecto. La opción `y` o `--yes` es para que no nos pregunte y escriba una configuración por defecto en dicho archivo. Siempre podemos editarlo más adelante.
 
 > Nota: Es muy aconsejable crear un archivo `.gitignore` con el siguiente contenido:
 > 
@@ -36,7 +36,7 @@ La última sentencia nos crea un archivo **`package.json`** con la metainformaci
 
 De esta forma indicamos que la carpeta `node_modules` y el archivo `.env` no serán incluidos en el repositorio, sólo permanecerán en el directorio de trabajo.
 
-El archivo `.env` (abreviatura de *environment*) es donde pondremos las **variables de entorno**, tales con la URL de conexión a la base de datos. 
+El archivo `.env` es donde pondremos las **variables de entorno**, tales con la URL de conexión a la base de datos. 
 
 
 ## Edición de package.json
@@ -112,6 +112,8 @@ app.use(express.json());
 app.listen(3000, () => console.log("Servidor iniciado..."));
 ```
 
+Por ahora dejaremos el archivo así, aunque más tarde lo cambiemos.
+
 También hemos añadido un callback en la última línea para que, cuando el servidor web esté iniciado, nos muestre un mensaje indicando tal circunstancia.
 
 Ya podemos probar nuestro servidor web, con el comando:
@@ -132,7 +134,6 @@ npm  install  nodemon  -D
 ```
 
 Si echamos un vistazo al archivo **`package.json`** veremos que dichos paquetes (también llamados módulos) han quedado registrados en dicho archivo:
-
 
 ```
 {
@@ -183,6 +184,8 @@ Deberemos sustituir `usuario`, `contraseña`, `servidor` y `basedatos` por los n
 
 
 ## Todos los archivos
+
+**Por último a continuación podremos ver todos los archivos.**
 
 `**package.json**`
 
